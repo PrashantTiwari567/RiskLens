@@ -1,0 +1,11 @@
+,data_type,missing_values,unique_values
+step,int64,0,180
+customer,object,0,4112
+age,object,0,8
+gender,object,0,4
+zipcodeOri,object,0,1
+merchant,object,0,50
+zipMerchant,object,0,1
+category,object,0,15
+amount,float64,0,23767
+fraud,int64,0,2

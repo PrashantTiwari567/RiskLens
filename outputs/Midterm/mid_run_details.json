@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-10-06T23:37:07.762896+00:00",
+  "dataset": "BankSim synthetic transactions",
+  "features": [
+    "amount",
+    "category"
+  ],
+  "target": "fraud",
+  "training_steps": [
+    0,
+    107
+  ],
+  "validation_steps": [
+    108,
+    143
+  ],
+  "reserved_test_steps": [
+    144,
+    179
+  ],
+  "models": {
+    "Logistic Regression": {
+      "setting": "class_weight=balanced, C=1.0 (Progress Report 2)",
+      "selected_threshold": 0.98,
+      "training_seconds": 0.423193400260061
+    },
+    "Random Forest": {
+      "setting": "300 trees, min_samples_leaf=25, balanced_subsample",
+      "selected_threshold": 0.98,
+      "training_seconds": 30.88161370018497
+    },
+    "XGBoost": {
+      "setting": "300 trees, max_depth=4, learning_rate=0.1, scale_pos_weight=76.0",
+      "selected_threshold": 0.98,
+      "training_seconds": 2.7196800000965595
+    }
+  },
+  "setting_selection_rule": "Highest validation average precision",
+  "threshold_rule": "Maximum validation F1 on thresholds 0.00-1.00 in steps of 0.01; ties: higher precision, then higher threshold.",
+  "logistic_regression_source": "Reloaded from Progress Report 2 (not retrained)",
+  "permutation_importance": "average_precision on validation, 5 repeats, seed 42",
+  "random_state": 42,
+  "test_evaluated": false,
+  "calibration_performed": false,
+  "python_version": "3.11.13",
+  "sklearn_version": "1.7.2",
+  "xgboost_version": "3.2.0",
+  "pandas_version": "2.3.3",
+  "numpy_version": "2.3.3"
+}

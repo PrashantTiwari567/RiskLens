@@ -1,0 +1,1 @@
+PASS: SQL overall totals, partition summary, training category summaries, training time summaries, and training amount summaries match Pandas.

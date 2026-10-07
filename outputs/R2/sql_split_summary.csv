@@ -1,0 +1,4 @@
+split,transactions,fraud_transactions,first_step,last_step
+train,332592,4320,0,107
+validation,128820,1440,108,143
+test,133231,1440,144,179
